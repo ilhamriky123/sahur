@@ -2,7 +2,7 @@ import pytz
 from datetime import datetime
 import os
 
-jamSahur = str(input("Set Jam Sahur: "))
+jamSahur = str(input("Setting Jam Sahur: "))
 hh = str(input("Klik 1: "))
 
 print ("\n", end = '')
@@ -13,7 +13,7 @@ while True:
     while True:
       if "2" in hh:
         from playsound import playsound
-        print ("\nSahuurrrrr!...", end = '')
+        print ("\nSahuurrrrr Baangggggg!...", end = '')
         print ("\nPlaying Alarm Sahur 1...", end = '')
         playsound('vids/sahur1.mp3')
         print ("\nPlaying Alarm Sahur 2...", end = '')
@@ -23,7 +23,7 @@ while True:
         print ("\nPlaying Alarm Sahur 3...", end = '')
         playsound('vids/sahur2.mp3')
       elif "1" in hh:
-        print ("\nWaktunya Sahuurrrrr!...", end = '')
+        print ("\nWaktunya Sahuurrrrr Gaannn!...", end = '')
         print ("\nPlaying Alarm Sahur 1...", end = '')
         os.system('mpv vids/sahur1.mp3')
         print ("\nPlaying Alarm Sahur 2...", end = '')
@@ -31,4 +31,4 @@ while True:
         print ("\nPlaying Alarm Sahur 3...", end = '')
         os.system('mpv vids/sahur2.mp3')  
   else:
-    print("\rBelum Waktunya Sahur... Jam Sekarang:", datetime_indonesia.strftime("%H:%M:%S"), end = '')
+    print("\rBelum Waktunya Sahur Brooo... Jam Sekarang:", datetime_indonesia.strftime("%H:%M:%S"), end = '')
